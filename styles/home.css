@@ -1,0 +1,42 @@
+.content {
+    display: grid;
+    /* Dividir a tela quantas vezes quiser, com porcentagens: */
+    grid-template-columns: 60% 40;
+    grid-template-rows: 11.4rem 1fr;
+    /* Se o tamanho não for exato, com porcentagens, dá pra colocar um tamanho e o restante fracionado */
+    /* Nesse caso, 11.4rem é o tamanho exato da parte de cima, o header, já o 1fr é o restando que sobra para a imagem */
+    grid-template-areas:  /* Com o areas, indicamos oque vai ocupar oque */
+    'header header'
+    'left right'
+}
+
+header {
+    grid-area: header;
+}
+
+#bg {
+    grid-area: left;
+
+    background: url('/assets/home-bg-img.svg') no-repeat top/contain;
+    /* no-repeat: para não repetir a img o top é para a img ir para o topo, e o contain é para ela se adaptar ao tamanho da div, ficar continida nela, não vazar  */
+}
+
+main {
+    grid-area: right;
+
+    display:flex;
+    align-items: center;
+}
+
+main .container {
+    width: min(36.3rem 100%) ; /* Adicionar o 100% garante que nossa aplicacação não irá quebrar devido a telas maiores */
+}
+
+main h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+    font-size: clamp(20px, 5vw, 2.8rem);
+
+    margin-bottom: 2.4rem; /* Essa margem foi descoberta vendo no figma, a distancia em px do texto h2 pro label */
+
+}
