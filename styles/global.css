@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html { 
+    /* Declaração de variáveis com css (--nome: propriedade;) */
+    --black: #0D114F;
+    --white: #FAFAFA;
+    --red: #E83F5B;
+    --light-blue: #E0ECFF;
+    --blue: #3485FF;
+    --background: #FBFCFF;
+    --overlay: #040911;
+    --icons-details: #A5B0C1;
+
+    --grey-dark: #4D5E77;
+    --grey-blue: #A1B2CD;
+    --grey-light: #E5EAF1;
+
+    /* 1rem = 16px (User Agent) = 100% (User Agent */
+    font-size: 62.5%; /* 10px */
+}
+
+h2 {
+    font: size 12.8rem;
+}
+
+body {
+    height: 100vh;
+    /* Aplicando a variavel */
+    background: var(--background-);
+}
+
+ /* Se aplicarmos as configs direto no body, o buton, input e textarea não são englobados, por isso
+ colocamos todos eles ai */
+body, button, input, textarea {
+    /* Intervalo de tamanho: no mínimo: 14px, o padrão: 1.6rem e no máximo: 2vw */
+    font-size: clamp(14px, 1.6rem, 2vw);
+
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.screen-only {
+   /* Código do css tawind para jogar a label para fora da tela */
+   position: absolute;
+   height: 100;
+   width: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden; /* Para não ter barra de rolagem */
+   clip-path: rect(0, 0, 0, 0);
+   white-space: nowrap;
+   border-width: 0;
+}
