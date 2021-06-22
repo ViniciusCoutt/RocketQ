@@ -1,7 +1,7 @@
 .content {
     display: grid;
     /* Dividir a tela quantas vezes quiser, com porcentagens: */
-    grid-template-columns: 60% 40;
+    grid-template-columns: 60% 40%;
     grid-template-rows: 11.4rem 1fr;
     /* Se o tamanho não for exato, com porcentagens, dá pra colocar um tamanho e o restante fracionado */
     /* Nesse caso, 11.4rem é o tamanho exato da parte de cima, o header, já o 1fr é o restando que sobra para a imagem */
@@ -18,7 +18,7 @@ header {
     grid-area: left;
 
     background: url('/assets/home-bg-img.svg') no-repeat top/contain;
-    /* no-repeat: para não repetir a img o top é para a img ir para o topo, e o contain é para ela se adaptar ao tamanho da div, ficar continida nela, não vazar  */
+    /* no-repeat: para não repetir a img o top é para a img ir para o topo, e o contain é para ela se adaptar ao tamanho da div, ficar dentro do espaço dela, não vaza */
 }
 
 main {
@@ -38,5 +38,15 @@ main h2 {
     font-size: clamp(20px, 5vw, 2.8rem);
 
     margin-bottom: 2.4rem; /* Essa margem foi descoberta vendo no figma, a distancia em px do texto h2 pro label */
+}
 
+input {
+    border: .2rem solid var(--grey-blue);
+    height: 4.8rem;
+    padding: 0 1.6rem;
+}
+
+input, button, .button {
+    width: 100%;
+    margin-bottom: 1.8rem;
 }
