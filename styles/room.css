@@ -112,7 +112,7 @@
 
 .question-wrapper .question-content {
     display: flex;
-    align-items: center; 
+    align-items: flex-start; /* Para alinhar ao topo */ 
     
 }
 
@@ -124,7 +124,10 @@
 
 .question-wrapper .question-content p {
     margin-left: 1.6rem;
-
+    word-break: break-word; /* Para não quebrar o layout por causa de um texto grande */
+    display: flex;
+    align-items: center;
+    min-height: 5.5rem; /*Para que o texto não quebre a depender de seu tamanho */
     
 }
 
