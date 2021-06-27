@@ -6,7 +6,7 @@
 
 ## 💻 Projeto
 
-O Rocket.Q tem como objetivo a realização de salas privadas para interação atraveś de perguntas anônimas. Você pode entrar em uma sala já existente com o ID dela. Ou criar sua própria sala com uma senha para o controle das perguntas. 
+O Rocket.Q tem como objetivo a realização de salas privadas para interação atraveś de perguntas anônimas. Você pode entrar em uma sala já existente com o ID dela ou criar sua própria sala com uma senha para o controle das perguntas. 
 
 OBS: Esse projeto foi realizado na NLW da [Rocketseat](https://github.com/rocketseat-education). Foi uma semana de muito aprendizado!
 
