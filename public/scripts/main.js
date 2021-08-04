@@ -5,15 +5,12 @@ const modal = Modal()
 const modalTitle = document.querySelector('.modal h2')
 const modalDescription = document.querySelector('.modal p')
 const modalButton = document.querySelector('.modal button')
-//Pegar todos os botões que existe com a classe check
 const checkButtons = document.querySelectorAll(".actions a.check") 
 
 checkButtons.forEach(button => {
-    //Adicionar a 'escuta'
     button.addEventListener("click", handleClick)
 })
 
-/* Quando o botão delete for clicado ele abre a modal */
 const deleteButton = document.querySelectorAll(".actions a.delete")
 
 deleteButton.forEach(button => {
@@ -21,7 +18,7 @@ deleteButton.forEach(button => {
 })
 
 function handleClick(event, check = true){
-    event.preventDefault() // Para não alterar a URL. Pois os botões são links: <a>
+    event.preventDefault() 
     const text = check ? "Marcar como lida" : "Excluir"
     const slug = check ? "check" : "delete"
     const roomId = document.querySelector("#room-id").dataset.id
@@ -35,7 +32,6 @@ function handleClick(event, check = true){
     modalButton.innerHTML = `Sim, ${text.toLowerCase()}`
     check? modalButton.classList.remove("red") : modalButton.classList.add("red")
 
-    //abrir modal 
     modal.open()
 }
 
