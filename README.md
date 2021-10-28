@@ -2,8 +2,6 @@
   RocketQ
 </h1>
 
-<img src="https://raw.githubusercontent.com/rocketseat-education/nlw-06-discover/main/.github/Rocket_Q.png" alt="My cool logo"/>
-
 ## 💻 Projeto
 
 O Rocket.Q tem como objetivo a realização de salas privadas para interação através de perguntas anônimas. Você pode entrar em uma sala já existente com o ID dela ou criar sua própria sala com uma senha para o controle das perguntas. 
